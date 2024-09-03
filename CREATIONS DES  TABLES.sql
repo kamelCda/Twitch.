@@ -178,8 +178,10 @@ CREATE TABLE badges(
 
 CREATE TABLE streams(
    Id_stream INT AUTO_INCREMENT,
-   start_time DATE,
-   end_time DATE,
+   Title  VARCHAR(255) NOT NULL,
+   Description TEXT,
+   start_time DATETIME NOT NULL,
+   end_time DATETIME NOT NULL,
    channel_id INT NOT NULL,
    PRIMARY KEY(Id_stream),
    FOREIGN KEY(channel_id) REFERENCES channel(id_channel)
@@ -431,8 +433,8 @@ CREATE TABLE tags(
 CREATE TABLE live_channel(
    id_live_channel_ INT AUTO_INCREMENT,
    title VARCHAR(150),
-   started_at DATE,
-   ended_at DATE,
+   started_at DATETIME NOT NULL,
+   ended_at DATETIME NOT NULL,
    stream_id INT NOT NULL,
    PRIMARY KEY(id_live_channel_),
    FOREIGN KEY(stream_id) REFERENCES streams(Id_stream)
@@ -451,8 +453,8 @@ CREATE TABLE channel_clips(
 CREATE TABLE all_vids(
    id_all_vids INT AUTO_INCREMENT,
    title VARCHAR(100),
-   start_time DATETIME,
-   end_time DATETIME,
+   start_time DATETIME NOT NULL,
+   end_time DATETIME NOT NULL,
    stream_id INT NOT NULL,
    PRIMARY KEY(id_all_vids),
    FOREIGN KEY(stream_id) REFERENCES streams(id_stream)
@@ -461,8 +463,8 @@ CREATE TABLE all_vids(
 CREATE TABLE past_streams(
    id_past_streams INT AUTO_INCREMENT,
    title VARCHAR(50),
-   start_time DATETIME,
-   end_time DATETIME,
+   start_time DATETIME NOT NULL,
+   end_time DATETIME NOT NULL,
    all_vids_id INT NOT NULL,
    PRIMARY KEY(id_past_streams),
    FOREIGN KEY(all_vids_id) REFERENCES all_vids(id_all_vids)
@@ -481,7 +483,7 @@ CREATE TABLE trending_streamers(
    id_trending_streams INT AUTO_INCREMENT,
    _rank INT,
    timeWindow VARCHAR(50),
-   created_at DATE,
+   created_at DATETIME NOT NULL,
    all_vids_id INT NOT NULL,
    PRIMARY KEY(id_trending_streams),
    FOREIGN KEY(all_vids_id) REFERENCES all_vids(id_all_vids)
@@ -491,7 +493,7 @@ CREATE TABLE stream_chat(
    id_stream_chat INT  AUTO_INCREMENT,
    live_id INT,
    message VARCHAR(255),
-   sent_at DATE,
+   sent_at DATETIME NOT NULL,
    all_vids_id INT NOT NULL,
    PRIMARY KEY(id_stream_chat),
    FOREIGN KEY(all_vids_id) REFERENCES all_vids(id_all_vids)
