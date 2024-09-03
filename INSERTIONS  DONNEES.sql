@@ -240,12 +240,12 @@ INSERT INTO streams (Title,Description, start_time,end_time, channel_id) VALUES
 ('Got','games of thrones resumé','2023-02-28 09:30:45', '2023-02-28 11:10:50', 2),
 ('Ufc','ultimate fight last fight','2023-03-31 09:30:45', '2023-03-31 11:10:50', 3),
 ('Olympic games','olympic resume of today','2023-04-20 09:30:45', '2023-04-20 11:10:50', 4),
-('My advice','music reaction','2023-05-25 09:30:45', '2023-05-25 11:10:50', 5),
-('Maths ','revision de math','2023-06-30 09:30:45', '2023-06-30 11:50:50', 6),
-('Maths 2','cours sur les probabilités','2023-07-15 09:30:45', '2023-07-15 11:10:50', 7),
-('Sciences','sciences recap','2023-08-10 09:30:45', '2023-08-10 11:10:50', 8),
-('Mario bross','cheatcode mario bros','2023-09-05 09:30:45', '2023-09-05 11:10:50', 9),
-('OM/PSG','match psg-om','2023-10-30 09:30:45', '2023-10-30 11:10:50', 10);
+('My advice','music reaction','2023-05-25 09:10:45', '2023-05-25 11:10:50', 5),
+('Maths ','revision de math','2023-06-30 08:30:45', '2023-06-30 11:50:50', 6),
+('Maths 2','cours sur les probabilités','2023-07-15 07:30:45', '2023-07-15 11:10:50', 7),
+('Sciences','sciences recap','2023-08-10 04:30:45', '2023-08-10 11:10:50', 8),
+('Mario bross','cheatcode mario bros','2023-09-05 13:30:45', '2023-09-05 18:10:50', 9),
+('OM/PSG','match psg-om','2023-10-30 20:30:45', '2023-10-30 23:45:50', 10);
 
 
 INSERT INTO clips (title_clip, langue_clip, nb_vue_clip, duration_clip, stream_id) VALUES
