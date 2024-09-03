@@ -235,17 +235,17 @@ INSERT INTO badges (name, level, channel, description, created_at, badges_id) VA
 ('MVP', 5, 'GamingChannel10', 'Badge pour les MVP', '2023-10-20', 10);
 
 
-INSERT INTO streams (start_time, end_time, channel_id) VALUES
-('2023-01-25', '2023-01-25', 1),
-('2023-02-28', '2023-02-28', 2),
-('2023-03-31', '2023-03-31', 3),
-('2023-04-20', '2023-04-20', 4),
-('2023-05-25', '2023-05-25', 5),
-('2023-06-30', '2023-06-30', 6),
-('2023-07-15', '2023-07-15', 7),
-('2023-08-10', '2023-08-10', 8),
-('2023-09-05', '2023-09-05', 9),
-('2023-10-30', '2023-10-30', 10);
+INSERT INTO streams (Title,Description, start_time,end_time, channel_id) VALUES
+('Diffusion 1','battle field pov','2023-01-25 11:45:25','2023-01-25 12:00:05', 1),
+('Got','games of thrones resumé','2023-02-28 09:30:45', '2023-02-28 11:10:50', 2),
+('Ufc','ultimate fight last fight','2023-03-31 09:30:45', '2023-03-31 11:10:50', 3),
+('Olympic games','olympic resume of today','2023-04-20 09:30:45', '2023-04-20 11:10:50', 4),
+('My advice','music reaction','2023-05-25 09:30:45', '2023-05-25 11:10:50', 5),
+('Maths ','revision de math','2023-06-30 09:30:45', '2023-06-30 11:50:50', 6),
+('Maths 2','cours sur les probabilités','2023-07-15 09:30:45', '2023-07-15 11:10:50', 7),
+('Sciences','sciences recap','2023-08-10 09:30:45', '2023-08-10 11:10:50', 8),
+('Mario bross','cheatcode mario bros','2023-09-05 09:30:45', '2023-09-05 11:10:50', 9),
+('OM/PSG','match psg-om','2023-10-30 09:30:45', '2023-10-30 11:10:50', 10);
 
 
 INSERT INTO clips (title_clip, langue_clip, nb_vue_clip, duration_clip, stream_id) VALUES
