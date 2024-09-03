@@ -274,36 +274,6 @@ INSERT INTO recommended_channels (priority, created_at, channel_id) VALUES
 (10, '2023-10-31', 10);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 INSERT INTO collections (created_at, ended_at, channel_id)
 VALUES ('2024-02-20', '2024-06-20', 1),
        ('2024-07-20', '2024-11-20', 2);
